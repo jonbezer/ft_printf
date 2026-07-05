@@ -18,8 +18,8 @@ As seguintes conversões são suportadas:
 | `%d` | Inteiro decimal com sinal (base 10) |
 | `%i` | Inteiro com sinal (base 10) |
 | `%u` | Inteiro decimal sem sinal (base 10) |
-| `%x` | Hexadecimal sem sinal (base 16, minúsculas) |
-| `%X` | Hexadecimal sem sinal (base 16, maiúsculas) |
+| `%x` | Número sem sinal em hexadecimal (base 16) — letras em minúsculas (ex: `ff`) |
+| `%X` | Número sem sinal em hexadecimal (base 16) — letras em maiúsculas (ex: `FF`) |
 | `%%` | Sinal de porcentagem literal |
 
 A função retorna o número total de caracteres escritos na stdout, igualando o comportamento do `printf()` original.
