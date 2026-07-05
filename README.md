@@ -6,7 +6,7 @@
 
 `ft_printf` é uma reimplementação da função `printf()` da biblioteca padrão do C, construída como uma biblioteca estática (`libftprintf.a`). O objetivo é reproduzir o comportamento central de formatação e saída do original, sem utilizar os mecanismos de buffer da libc.
 
-O projeto introduz **funções variádicas** em C — funções que aceitam um número variável de argumentos — utilizando as macros de `<stdarg.h>`: `va_start`, `va_arg`, `va_copy` e `va_end`.
+O projeto introduz **funções variádicas** em C — funções que aceitam um número variável de argumentos — utilizando as macros de `<stdarg.h>`: `va_list`, `va_start`, `va_arg`, e `va_end`.
 
 As seguintes conversões são suportadas:
 
@@ -80,7 +80,7 @@ No seu arquivo fonte:
 
 int main(void)
 {
-    ft_printf("Olá, %s! Você tem %d anos.\n", "Jonathan", 22);
+    ft_printf("Olá, %s! Você tem %d anos%c\n", "Jonathan", 31, '!');
     return (0);
 }
 ```
